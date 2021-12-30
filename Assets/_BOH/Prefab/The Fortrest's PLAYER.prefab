@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2859291877774657223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2859291877774657217}
+  - component: {fileID: 2859291877774657222}
+  - component: {fileID: 2859291877774657218}
+  - component: {fileID: 2859291877774657219}
+  - component: {fileID: 5948651342216805264}
+  m_Layer: 8
+  m_Name: The Fortrest's PLAYER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2859291877774657217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859291877774657223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8277, y: -1.3568, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2859291877774657222
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859291877774657223}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2111930155
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 1d6199c322d618740868ecd005cba5fb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.41, y: 2.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &2859291877774657218
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859291877774657223}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2859291877774657219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859291877774657223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4350e42b778533d4eac444fba2a706d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthCharacter: 0
+  fortrestLevels:
+  - maxHealth: 300
+    stateFortrestSprites:
+    - {fileID: 21300000, guid: 1d6199c322d618740868ecd005cba5fb, type: 3}
+    - {fileID: 21300000, guid: 7f391e90e28526749874252744bafb81, type: 3}
+    - {fileID: 21300000, guid: f523aaed77fbfc74181da2cdf8319641, type: 3}
+    - {fileID: 21300000, guid: befb2b3374759424086903d5fe7c2703, type: 3}
+    - {fileID: 21300000, guid: 5d991eb7bb9766646abd84039b3652cd, type: 3}
+  - maxHealth: 400
+    stateFortrestSprites:
+    - {fileID: 21300000, guid: 35bafc10001b1b847bc25fef5e0ecd6b, type: 3}
+    - {fileID: 21300000, guid: 0a546161f3e58c548946694922425929, type: 3}
+    - {fileID: 21300000, guid: 835e3ec155efd3141b624fcdbf814c27, type: 3}
+    - {fileID: 21300000, guid: b73796aa51c5a8b429613ecbfc99acdb, type: 3}
+    - {fileID: 21300000, guid: 1dcbdb997e5e3ef438dea8faa794cf95, type: 3}
+  - maxHealth: 500
+    stateFortrestSprites:
+    - {fileID: 21300000, guid: cf69bdc0dad2aac4d8a8bc8be6bb1587, type: 3}
+    - {fileID: 21300000, guid: 81d0777c65f37bd43b853868b8cf563c, type: 3}
+    - {fileID: 21300000, guid: 9054659e608d9dd49bf9912c0222bc81, type: 3}
+    - {fileID: 21300000, guid: 0a73234ed32902d4398d08390e847682, type: 3}
+    - {fileID: 21300000, guid: f2fb4100e623d4541863d4eaf0598b37, type: 3}
+  - maxHealth: 600
+    stateFortrestSprites:
+    - {fileID: 21300000, guid: 65565f63b729166419e665d6cfe2e914, type: 3}
+    - {fileID: 21300000, guid: 0d2f45fe2933dba4fbc87353bfc43dec, type: 3}
+    - {fileID: 21300000, guid: 7b527e212fa0e3945b28fe7b78fd1fbd, type: 3}
+    - {fileID: 21300000, guid: 0784cef7f9517854a8523a0ed3b84f6a, type: 3}
+    - {fileID: 21300000, guid: 40988308727814846a18c5ecb87dc8f1, type: 3}
+  - maxHealth: 700
+    stateFortrestSprites:
+    - {fileID: 21300000, guid: 3c8ba22242da3d240b0c496e6eeb7839, type: 3}
+    - {fileID: 21300000, guid: 4c75a5e29a3ede24987293d009095b76, type: 3}
+    - {fileID: 21300000, guid: ac3483f8e4385ad4fab7e9e6116b1214, type: 3}
+    - {fileID: 21300000, guid: f07ddc8b8b422ec428c3433da35f4d16, type: 3}
+    - {fileID: 21300000, guid: 95a90f2aa00c7f04897d55f9110debb7, type: 3}
+  fortrestLevel: 1
+  enemyFortrestHealth: 
+  extraHealth: 0
+  currentHealth: 0
+  fortrestSprite: {fileID: 0}
+  speed: 50
+  amount: 0.03
+  shakeTime: 0.1
+  shakeX: 1
+  shakeY: 0
+--- !u!61 &5948651342216805264
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859291877774657223}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2700733, y: 0.88}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.011929078}
+    oldSize: {x: 2.41, y: 2.16}
+    newSize: {x: 2.41, y: 2.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7501466, y: 1.7723184}
+  m_EdgeRadius: 0
